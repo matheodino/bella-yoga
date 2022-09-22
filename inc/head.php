@@ -8,3 +8,6 @@
 <link rel="icon" href="/images/favicon.png" type="image/png">
 <!-- Author -->
 <meta name="author" content="matheodino, hi@matheonlht.com">
+
+<?php // Variables
+$site = "Bella Yoga"; ?>
