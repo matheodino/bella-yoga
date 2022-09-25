@@ -2,10 +2,8 @@
 <html lang="fr">
 
 <head>
-    <?php include "../inc/head.php" ?>
     <?php $page = "Contact" ?>
-    <!-- Page title -->
-    <title><?php echo $page . " – " . $site ?></title>
+    <?php include "../inc/head.php" ?>
 </head>
 
 <body>

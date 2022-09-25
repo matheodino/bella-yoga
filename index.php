@@ -2,10 +2,8 @@
 <html lang="fr">
 
 <head>
-    <?php include "inc/head.php" ?>
     <?php $page = "Accueil" ?>
-    <!-- Page title -->
-    <title><?php echo $page . " – " . $site ?></title>
+    <?php include "inc/head.php" ?>
 </head>
 
 <body>
@@ -23,7 +21,7 @@
                 <h2>Santé et flexibilité</h2>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, debitis libero magni ea autem fugit consequuntur, ducimus commodi aut quisquam, quas ex similique ipsum consectetur tenetur suscipit nisi placeat perspiciatis? Officiis, reprehenderit! Impedit dicta ipsa est voluptatum officia quos temporibus, facere culpa laborum eum numquam, consequatur recusandae nihil soluta error dolore rem minus.</p>
-                
+
                 <a href="a-propos" class="button">Découvrir mon parcours</a>
             </div>
 
