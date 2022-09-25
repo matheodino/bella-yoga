@@ -1,0 +1,60 @@
+{
+    "posts": [
+        {
+            "id": 0,
+            "slug": "petite-histoire-du-yoga",
+            "title": "Petite histoire du yoga",
+            "date": "1er janvier 2022",
+            "author": "Bella",
+            "image": [
+                {
+                    "slug": "corps-ferme-flexible",
+                    "alt": "Jeune femme faisant un exercice adbominal"
+                }
+            ],
+            "content": "<p>Test</p>"
+        },
+        {
+            "id": 1,
+            "slug": "retrouver-un-corps-ferme-et-flexible",
+            "title": "Retrouver un corps ferme et flexible",
+            "date": "5 février 2022",
+            "author": "Bella",
+            "image": [
+                {
+                    "slug": "corps-ferme-flexible",
+                    "alt": "Jeune femme faisant un exercice adbominal"
+                }
+            ],
+            "content": ""
+        },
+        {
+            "id": 2,
+            "slug": "reduire-le-stress-avec-le-yoga",
+            "title": "Réduire le stress avec le yoga",
+            "date": "18 mai 2022",
+            "author": "Bella",
+            "image": [
+                {
+                    "slug": "stress",
+                    "alt": "Jeune femme en position de méditation zen"
+                }
+            ],
+            "content": ""
+        },
+        {
+            "id": 3,
+            "slug": "comment-bien-preparer-son-stage-de-yoga",
+            "title": "Comment bien préparer son stage de yoga",
+            "date": "7 juin 2022",
+            "author": "Bella",
+            "image": [
+                {
+                    "slug": "stage",
+                    "alt": "Groupe de personnes faisant des exercices de yoga"
+                }
+            ],
+            "content": ""
+        }
+    ]
+}
