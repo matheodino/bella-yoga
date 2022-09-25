@@ -1,6 +1,6 @@
 <header>
-    <img src="../images/logo-bella-yoga.png" alt="Logo Bella Yoga">
-    
+    <img src="../images/logo-bella-yoga.png" alt="Logo Bella Yoga" class="logo">
+
     <nav>
         <ul>
             <li>Accueil</li>

@@ -8,6 +8,22 @@ main {
     border-color: $lightgray;
 }
 
-footer svg {
-    fill: $darkgray;
+footer {
+    svg {
+        fill: $darkgray;
+    }    
+}
+
+a {
+    color: $pink;
+}
+
+a.button {
+    color: inherit;
+    border-color: $pink;
+
+    &:hover {
+        color: white;
+        background-color: $pink;
+    }
 }

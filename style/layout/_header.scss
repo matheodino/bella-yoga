@@ -1,23 +1,11 @@
 header {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    margin-top: 32px;
+    gap: 41px;
+    margin-bottom: 4px;
 
-    img {
+    img.logo {
         margin: auto;
-    }
-
-    nav {
-        justify-content: center;
-        text-transform: uppercase;
-
-        ul {
-            gap: 32px;
-
-            li {
-                padding: 16px;
-            }
-        }
+        max-height: 57px;
     }
 }

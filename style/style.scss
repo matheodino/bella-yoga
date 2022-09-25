@@ -1,7 +1,7 @@
 // Base
+@import "base/reset";
 @import "base/base";
 @import "base/typography";
-@import "base/reset";
 
 // Layout
 @import "layout/main";
@@ -16,9 +16,11 @@
 @import "abstracts/mixins";
 
 // Components
+@import "components/break";
+@import "components/button";
 
 // Pages
-@import "pages/index";
+@import "pages/home";
 
 // Themes
 @import "themes/dark";
