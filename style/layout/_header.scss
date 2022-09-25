@@ -4,8 +4,11 @@ header {
     gap: 41px;
     margin-bottom: 4px;
 
-    img.logo {
+    a.logo {
         margin: auto;
-        max-height: 57px;
+
+        img {
+            max-height: 57px;
+        }
     }
 }

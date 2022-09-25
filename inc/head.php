@@ -13,6 +13,13 @@
 <meta name="author" content="matheodino, hi@matheonlht.com">
 
 <?php // Variables
+
+// Identity
 $site = "Bella Yoga";
-$slug = str_replace(".php", "", substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], "/") + 1)); // Get current page slug
-$active = 'class="active"' ?>
+$address = "31, rue du Bassin 38100 Grenoble";
+$phone = "09.87.65.43.21";
+$email = "hello@bella-yoga.com";
+
+// Utility
+$slug = stripslashes(str_replace("/", "", dirname($_SERVER["SCRIPT_NAME"]))); // Get current page slug
+$active = "class=\"active\"" ?>

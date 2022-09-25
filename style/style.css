@@ -155,20 +155,28 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section.contact div.info p {
   font-family: "Nixie One", cursive;
 }
 
 h1 {
   font-size: 35px;
-  margin-bottom: 24px;
-}
-h1.large {
-  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
 h2 {
   font-size: 23px;
-  margin-bottom: 8px;
 }
 
 h3 {
@@ -234,8 +242,10 @@ header {
   gap: 41px;
   margin-bottom: 4px;
 }
-header img.logo {
+header a.logo {
   margin: auto;
+}
+header a.logo img {
   max-height: 57px;
 }
 
@@ -247,7 +257,7 @@ hr {
   background-color: #ff8086;
 }
 
-a.button {
+a.button, input[type=submit] {
   display: inline-block;
   padding: 16px 20px;
   border: 2px solid;
@@ -256,15 +266,74 @@ a.button {
 section.welcome {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
+  gap: 48px;
+}
+section.welcome h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  color: inherit;
 }
 section.welcome div {
+  align-self: center;
   margin-left: 48px;
 }
 section.welcome img {
   padding: 72px 0;
   margin-right: 48px;
+}
+
+section.about {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+section.about img {
+  padding: 72px 0;
+  margin-right: 48px;
+}
+
+section.contact {
+  display: flex;
+  gap: 48px;
+}
+section.contact div.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 33.3333333333%;
+}
+section.contact div.info p {
+  margin: 0;
+}
+section.contact form {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 8px;
+  margin-right: 48px;
+}
+section.contact form label {
+  display: block;
+}
+section.contact form label:not(:first-child) {
+  margin-top: 8px;
+}
+section.contact form input[type=submit] {
+  display: block;
+  align-self: flex-start;
+  margin-top: 24px;
+}
+section.contact form input:not([type=submit]),
+section.contact form textarea {
+  border: none;
+  padding: 16px;
+  background-color: #d1d3d4;
+  border-radius: 0 !important;
+}
+section.contact form input:not([type=submit]):focus,
+section.contact form textarea:focus {
+  background-color: #ebf9ef;
+  outline: 1px solid #439f31;
 }
 
 body {
@@ -281,15 +350,21 @@ footer svg {
   fill: #5e616b;
 }
 
-a {
+h1, a {
   color: #ff8086;
 }
 
-a.button {
+a.button, input[type=submit] {
   color: inherit;
   border-color: #ff8086;
+  background-color: inherit;
 }
-a.button:hover {
+a.button:hover, input[type=submit]:hover {
   color: white;
   background-color: #ff8086;
+  cursor: pointer;
+}
+
+input:not([type=submit]), textarea {
+  background-color: #d1d3d4;
 }

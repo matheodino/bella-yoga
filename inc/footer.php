@@ -1,6 +1,6 @@
 <footer>
     <div class="info">
-        <p class="contact"><a href="" target="_blank">31, rue du Bassin 38100 Grenoble</a> | <a href="tel:+33987654321">09.87.65.43.21</a></p>
+        <p class="contact"><a href="" target="_blank"><?php echo $address ?></a> | <a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></p>
         <p>© 2023 Bella Yoga - Tous droits réservés</p>
     </div>
 
@@ -12,7 +12,7 @@
                         <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
                     </svg>
                 </a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">
+            <li><a href="https://www.instagram.com/bellayoga/" target="_blank">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.25 448.15">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->

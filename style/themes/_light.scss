@@ -14,16 +14,22 @@ footer {
     }    
 }
 
-a {
+h1, a {
     color: $pink;
 }
 
-a.button {
+a.button, input[type="submit"] {
     color: inherit;
     border-color: $pink;
+    background-color: inherit;
 
     &:hover {
         color: white;
         background-color: $pink;
+        cursor: pointer;
     }
+}
+
+input:not([type="submit"]), textarea {
+    background-color: $lightgray2;
 }
