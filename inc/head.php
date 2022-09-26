@@ -13,4 +13,4 @@
 <!-- Author -->
 <meta name="author" content="matheodino, hi@matheonlht.com">
 <!-- Page title -->
-<title><?php echo $page . " – " . $site ?></title>
+<title><?= $page . " – " . $site ?></title>

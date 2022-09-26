@@ -2,27 +2,27 @@
 <html lang="fr">
 
 <head>
-    <?php $page = "Contact" ?>
-    <?php include "../inc/head.php" ?>
+    <? $page = "Contact" ?>
+    <? include "../inc/head.php" ?>
 </head>
 
 <body>
     <!-- --- HEADER --- -->
-    <?php include "../inc/header.php"; ?>
+    <? include "../inc/header.php"; ?>
 
     <!-- --- MAIN --- -->
     <main>
-        <h1><?php echo $page ?></h1>
+        <h1><?= $page ?></h1>
 
         <section class="contact">
             <div class="info">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda dolor dolores quia mollitia maiores repellendus.</p>
 
                 <div>
-                    <p>Studio <?php echo $site ?></p>
-                    <p><?php echo $address ?></p>
-                    <p>Tél. <?php echo $phone ?></p>
-                    <p>Email : <?php echo $email ?></p>
+                    <p>Studio <?= $site ?></p>
+                    <p><?= $address ?></p>
+                    <p>Tél. <?= $phone ?></p>
+                    <p>Email : <?= $email ?></p>
                 </div>
 
                 <div>
@@ -50,7 +50,7 @@
     </main>
 
     <!-- --- FOOTER --- -->
-    <?php include "../inc/footer.php"; ?>
+    <? include "../inc/footer.php"; ?>
 </body>
 
 </html>

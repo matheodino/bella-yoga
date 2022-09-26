@@ -2,19 +2,19 @@
 <html lang="fr">
 
 <head>
-    <?php $page = "À propos" ?>
-    <?php include "../inc/head.php" ?>
+    <? $page = "À propos" ?>
+    <? include "../inc/head.php" ?>
 </head>
 
 <body>
     <!-- --- HEADER --- -->
-    <?php include "../inc/header.php"; ?>
+    <? include "../inc/header.php"; ?>
 
     <!-- --- MAIN --- -->
     <main>
         <section class="about">
             <div>
-                <h1><?php echo $page ?></h1>
+                <h1><?= $page ?></h1>
 
                 <h2>Professeurs de yoga certifiée</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo possimus, fugit molestiae ab placeat culpa perspiciatis repellat at, accusamus eius corporis dolor pariatur amet, iste itaque labore mollitia eligendi perferendis iure dolorum voluptates odit illum deleniti! Pariatur quod voluptas ducimus iste dolorum asperiores fuga quam ab rem ut est temporibus consequuntur, modi, cumque fugit deleniti numquam debitis labore atque recusandae, officiis nesciunt. Aliquam, cumque.</p>
@@ -36,7 +36,7 @@
     </main>
 
     <!-- --- FOOTER --- -->
-    <?php include "../inc/footer.php"; ?>
+    <? include "../inc/footer.php"; ?>
 </body>
 
 </html>

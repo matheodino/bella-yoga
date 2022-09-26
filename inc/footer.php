@@ -1,6 +1,6 @@
 <footer>
     <div class="info">
-        <p class="contact"><a href="" target="_blank"><?php echo $address ?></a> | <a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a></p>
+        <p class="contact"><a href="" target="_blank"><?= $address ?></a> | <a href="tel:<?= $phone ?>"><?= $phone ?></a></p>
         <p>© 2023 Bella Yoga - Tous droits réservés</p>
     </div>
 

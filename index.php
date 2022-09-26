@@ -2,19 +2,19 @@
 <html lang="fr">
 
 <head>
-    <?php $page = "Accueil" ?>
-    <?php include "inc/head.php" ?>
+    <? $page = "Accueil" ?>
+    <? include "inc/head.php" ?>
 </head>
 
 <body>
     <!-- --- HEADER --- -->
-    <?php include "inc/header.php"; ?>
+    <? include "inc/header.php" ?>
 
     <!-- --- MAIN --- -->
     <main>
         <section class="welcome">
             <div>
-                <h1>Bienvenue sur <?php echo $site ?></h1>
+                <h1>Bienvenue sur <?= $site ?></h1>
 
                 <hr>
 
@@ -30,7 +30,7 @@
     </main>
 
     <!-- --- FOOTER --- -->
-    <?php include "inc/footer.php"; ?>
+    <? include "inc/footer.php" ?>
 </body>
 
 </html>
