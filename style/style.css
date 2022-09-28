@@ -193,6 +193,18 @@ main {
   border: 1px solid;
 }
 
+.flex {
+  display: flex;
+  gap: 48px;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 33.3333333333%;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -264,9 +276,7 @@ a.button, input[type=submit] {
 }
 
 section.welcome {
-  display: flex;
   justify-content: center;
-  gap: 48px;
 }
 section.welcome h1 {
   font-size: 48px;
@@ -283,25 +293,13 @@ section.welcome img {
 }
 
 section.about {
-  display: flex;
   justify-content: center;
-  gap: 48px;
 }
 section.about img {
   padding: 72px 0;
   margin-right: 48px;
 }
 
-section.contact {
-  display: flex;
-  gap: 48px;
-}
-section.contact div.info {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  width: 33.3333333333%;
-}
 section.contact div.info p {
   margin: 0;
 }

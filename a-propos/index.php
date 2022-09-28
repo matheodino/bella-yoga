@@ -8,11 +8,11 @@
 
 <body>
     <!-- --- HEADER --- -->
-    <? include "../inc/header.php"; ?>
+    <? include "../inc/header.php" ?>
 
     <!-- --- MAIN --- -->
     <main>
-        <section class="about">
+        <section class="flex about">
             <div>
                 <h1><?= $page ?></h1>
 
@@ -36,7 +36,7 @@
     </main>
 
     <!-- --- FOOTER --- -->
-    <? include "../inc/footer.php"; ?>
+    <? include "../inc/footer.php" ?>
 </body>
 
 </html>

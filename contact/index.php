@@ -8,14 +8,14 @@
 
 <body>
     <!-- --- HEADER --- -->
-    <? include "../inc/header.php"; ?>
+    <? include "../inc/header.php" ?>
 
     <!-- --- MAIN --- -->
     <main>
         <h1><?= $page ?></h1>
 
-        <section class="contact">
-            <div class="info">
+        <section class="flex contact">
+            <div class="col-3 info">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda dolor dolores quia mollitia maiores repellendus.</p>
 
                 <div>
@@ -50,7 +50,7 @@
     </main>
 
     <!-- --- FOOTER --- -->
-    <? include "../inc/footer.php"; ?>
+    <? include "../inc/footer.php" ?>
 </body>
 
 </html>
