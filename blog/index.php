@@ -8,7 +8,7 @@
 
 <body>
     <!-- --- HEADER --- -->
-    <? include "../inc/header.php"; ?>
+    <? include "../inc/header.php" ?>
 
     <!-- --- MAIN --- -->
     <main>
@@ -18,28 +18,27 @@
 
         <section class="posts">
             <? $posts = json_decode(file_get_contents("posts.json"))->posts;
-            $i = 0;
             foreach ($posts as $post) { ?>
-                <a href="article.php?article='<?= $post->slug ?>'">
+                <a href="article.php?<?= $post->slug ?>">
                     <article>
                         <img src="../images/<?= $post->image[0]->slug ?>.png" alt="<?= $post->image[0]->alt ?>">
-    
+
                         <div>
                             <h2><?= $post->title ?></h2>
-    
+
                             <p><?= "Le $post->date par $post->author" ?></p>
-    
-                            <p><?= strip_tags($post->content); ?></p>
+
+                            <?= // Print an excerpt of the first 32 words 
+                            implode(" ", array_slice(str_word_count(strip_tags(implode(" ", $post->content)), 1), 0, 31)) . "..." ?>
                         </div>
                     </article>
                 </a>
-            <? $i++;
-            } ?>
+            <? } ?>
         </section>
     </main>
 
     <!-- --- FOOTER --- -->
-    <? include "../inc/footer.php"; ?>
+    <? include "../inc/footer.php" ?>
 </body>
 
 </html>
