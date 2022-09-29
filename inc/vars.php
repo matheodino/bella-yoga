@@ -6,4 +6,7 @@ $email = "<a href=\"mailto:hello@bella-yoga.com\">hello@bella-yoga.com</a>";
 
 // Utility
 $slug = stripslashes(str_replace("/", "", dirname($_SERVER["SCRIPT_NAME"]))); // Get current page slug
+$path = dirname($_SERVER["SCRIPT_NAME"]);
+$root = $path == "/bella-yoga" ? true : false;
+$backward = $root == true ? "" : "../";
 $active = "class=\"active\"";
