@@ -17,7 +17,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa possimus, officiis nostrum quaerat soluta, aperiam modi eos velit incidunt consectetur a assumenda illo sed nam maxime deserunt ea doloremque dolor qui.</p>
 
         <section class="posts flex flex-col">
-            <? $posts = json_decode(file_get_contents("posts.json"))->posts; // Convert Json to PHP array
+            <? $posts = array_reverse(json_decode(file_get_contents("posts.json"))->posts); // Convert Json to PHP reverse array (newest articles first)
             
             foreach ($posts as $post) { ?>
                 <a href="article.php?<?= $post->slug ?>">

@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <? $posts = json_decode(file_get_contents("posts.json"))->posts; // Convert Json to PHP array
+    <? $posts = array_reverse(json_decode(file_get_contents("posts.json"))->posts); // Convert Json to PHP reverse array (newest articles first)
 
     $query = parse_url($_SERVER['REQUEST_URI'])['query']; // Get the query from URI
 
