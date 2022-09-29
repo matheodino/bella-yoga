@@ -1,5 +1,7 @@
 body > header {
-    flex-direction: column;
+    &.flex {
+        flex-direction: column;
+    }
 
     a.logo {
         margin: auto;

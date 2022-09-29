@@ -6,7 +6,13 @@ nav {
 
     ul {
         display: flex;
-        gap: 72px;
+        flex-direction: column;
+        gap: 0 72px;
+        text-align: center;
+
+        @include respond-to(small) {
+            flex-direction: row;
+        }
 
         li {
             padding: 8px;

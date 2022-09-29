@@ -1,6 +1,4 @@
 section.contact {
-    
-
     div.info {
         h2 {
             margin-top: 0;
@@ -15,37 +13,46 @@ section.contact {
         }
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
+    div.form {
         flex: auto;
-        gap: 8px;
-        margin-right: 48px;
 
-        label {
-            display: block;
+        h2 {
+            margin-top: 0;
+        }
 
-            &:not(:first-child) {
-                margin-top: 8px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            label {
+                display: block;
+
+                &:not(:first-child) {
+                    margin-top: 8px;
+                }
+
             }
 
-        }
+            input[type="submit"] {
+                display: block;
+                margin-top: 24px;
 
-        input[type="submit"] {
-            display: block;
-            align-self: flex-start;
-            margin-top: 24px;
-        }
+                @include respond-to(small) {
+                    align-self: flex-start;
+                }
+            }
 
-        input:not([type="submit"]),
-        textarea {
-            border: none;
-            padding: 16px;
-            background-color: $lightgray2;
+            input:not([type="submit"]),
+            textarea {
+                border: none;
+                padding: 16px;
+                background-color: $lightgray2;
 
-            &:focus {
-                background-color: #ebf9ef;
-                outline: 1px solid #439f31;
+                &:focus {
+                    background-color: #ebf9ef;
+                    outline: 1px solid #439f31;
+                }
             }
         }
     }

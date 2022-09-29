@@ -29,12 +29,16 @@ aside.posts {
         }
 
         p.meta {
-            margin-bottom: 32px;
+            margin-bottom: 16px;
+
+            @include respond-to(small) {
+                margin-bottom: 32px;
+            }
         }
 
         img {
             width: 100%;
-            height: 384px;
+            max-height: 384px;
             object-fit: cover;
         }
     }

@@ -1,6 +1,11 @@
 footer {
     justify-content: space-between;
     margin-top: 48px;
+    text-align: center;
+
+    @include respond-to(small) {
+        text-align: left;
+    }
 
     a {
         color: inherit;
@@ -16,17 +21,37 @@ footer {
             line-height: normal;
         }
 
-        p.contact, a {
+        span {
+            display: none;
+        }
+
+        a {
+            display: block;
+        }
+
+        a,
+        span {
             font-size: 26px;
             font-weight: bold;
+
+            @include respond-to(small) {
+                display: inline;
+            }
         }
     }
 
     div.social {
         ul {
+            flex-direction: row;
+            justify-content: center;
             gap: 16px;
 
-            li, svg {
+            @include respond-to(small) {
+                justify-content: inherit;
+            }
+
+            li,
+            svg {
                 width: 32px;
                 height: 32px;
             }

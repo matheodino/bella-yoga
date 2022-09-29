@@ -1,3 +1,8 @@
+// Abstract
+@import "abstracts/variables";
+@import "abstracts/colors";
+@import "abstracts/mixins";
+
 // Base
 @import "base/reset";
 @import "base/base";
@@ -9,11 +14,6 @@
 @import "layout/footer";
 @import "layout/sidebar";
 @import "layout/header";
-
-// Abstract
-@import "abstracts/variables";
-@import "abstracts/colors";
-@import "abstracts/mixins";
 
 // Components
 @import "components/break";

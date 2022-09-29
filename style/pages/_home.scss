@@ -1,5 +1,7 @@
 section.welcome {
-    padding: 0 48px;
+    @include respond-to(small) {
+        padding: 0 48px;
+    }
 
     h1 {
         font-size: 48px;

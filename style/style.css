@@ -203,22 +203,38 @@ h3 {
 body {
   max-width: 980px;
   margin: 48px auto;
+  padding: 4px;
 }
 
 main {
-  padding: 48px;
+  padding: 32px 16px;
   border: 1px solid;
+}
+@media (min-width: 767px) {
+  main {
+    padding: 48px;
+  }
 }
 
 .flex {
   display: flex;
+  flex-direction: column;
   gap: 48px;
+}
+@media (min-width: 767px) {
+  .flex {
+    flex-direction: row;
+  }
 }
 
 .col-3 {
   display: flex;
   flex-direction: column;
-  width: 33.3333333333%;
+}
+@media (min-width: 767px) {
+  .col-3 {
+    width: 33.3333333333%;
+  }
 }
 
 .posts {
@@ -226,7 +242,13 @@ main {
 }
 .posts article {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+}
+@media (min-width: 767px) {
+  .posts article {
+    flex-direction: row;
+  }
 }
 .posts article img {
   align-self: flex-start;
@@ -251,8 +273,17 @@ main {
 }
 
 section.image img {
-  align-self: center;
-  margin: 64px 0;
+  align-self: flex-end;
+  margin-top: -96px;
+  margin-right: 16px;
+  height: 384px;
+}
+@media (min-width: 767px) {
+  section.image img {
+    align-self: center;
+    height: auto;
+    margin: 64px 0;
+  }
 }
 
 nav {
@@ -263,7 +294,14 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 72px;
+  flex-direction: column;
+  gap: 0 72px;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  nav ul {
+    flex-direction: row;
+  }
 }
 nav ul li {
   padding: 8px;
@@ -275,6 +313,12 @@ nav ul li a:not(.active) {
 footer {
   justify-content: space-between;
   margin-top: 48px;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  footer {
+    text-align: left;
+  }
 }
 footer a {
   color: inherit;
@@ -288,19 +332,40 @@ footer div.info * {
   margin: 0;
   line-height: normal;
 }
-footer div.info p.contact, footer div.info a {
+footer div.info span {
+  display: none;
+}
+footer div.info a {
+  display: block;
+}
+footer div.info a,
+footer div.info span {
   font-size: 26px;
   font-weight: bold;
 }
+@media (min-width: 767px) {
+  footer div.info a,
+footer div.info span {
+    display: inline;
+  }
+}
 footer div.social ul {
+  flex-direction: row;
+  justify-content: center;
   gap: 16px;
 }
-footer div.social ul li, footer div.social ul svg {
+@media (min-width: 767px) {
+  footer div.social ul {
+    justify-content: inherit;
+  }
+}
+footer div.social ul li,
+footer div.social ul svg {
   width: 32px;
   height: 32px;
 }
 
-body > header {
+body > header.flex {
   flex-direction: column;
 }
 body > header a.logo {
@@ -324,8 +389,10 @@ a.button, input[type=submit] {
   border: 2px solid;
 }
 
-section.welcome {
-  padding: 0 48px;
+@media (min-width: 767px) {
+  section.welcome {
+    padding: 0 48px;
+  }
 }
 section.welcome h1 {
   font-size: 48px;
@@ -345,32 +412,40 @@ section.contact div.info a {
 section.contact div.info div p {
   line-height: normal;
 }
-section.contact form {
+section.contact div.form {
+  flex: auto;
+}
+section.contact div.form h2 {
+  margin-top: 0;
+}
+section.contact div.form form {
   display: flex;
   flex-direction: column;
-  flex: auto;
   gap: 8px;
-  margin-right: 48px;
 }
-section.contact form label {
+section.contact div.form form label {
   display: block;
 }
-section.contact form label:not(:first-child) {
+section.contact div.form form label:not(:first-child) {
   margin-top: 8px;
 }
-section.contact form input[type=submit] {
+section.contact div.form form input[type=submit] {
   display: block;
-  align-self: flex-start;
   margin-top: 24px;
 }
-section.contact form input:not([type=submit]),
-section.contact form textarea {
+@media (min-width: 767px) {
+  section.contact div.form form input[type=submit] {
+    align-self: flex-start;
+  }
+}
+section.contact div.form form input:not([type=submit]),
+section.contact div.form form textarea {
   border: none;
   padding: 16px;
   background-color: #d1d3d4;
 }
-section.contact form input:not([type=submit]):focus,
-section.contact form textarea:focus {
+section.contact div.form form input:not([type=submit]):focus,
+section.contact div.form form textarea:focus {
   background-color: #ebf9ef;
   outline: 1px solid #439f31;
 }
@@ -401,11 +476,16 @@ aside.posts article {
   margin: 0;
 }
 .the_post header p.meta {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+}
+@media (min-width: 767px) {
+  .the_post header p.meta {
+    margin-bottom: 32px;
+  }
 }
 .the_post header img {
   width: 100%;
-  height: 384px;
+  max-height: 384px;
   -o-object-fit: cover;
      object-fit: cover;
 }
