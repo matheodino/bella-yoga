@@ -449,6 +449,11 @@ section.contact div.form form textarea:focus {
   background-color: #ebf9ef;
   outline: 1px solid #439f31;
 }
+section.contact div.form form textarea {
+  resize: vertical;
+  min-height: 18.4px;
+  max-height: 512px;
+}
 
 section.blog {
   gap: 96px;
@@ -521,4 +526,8 @@ a.button:hover, input[type=submit]:hover {
 
 input:not([type=submit]), textarea {
   background-color: #d1d3d4;
+}
+
+form span {
+  color: #ff8086;
 }

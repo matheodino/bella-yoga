@@ -33,3 +33,7 @@ a.button, input[type="submit"] {
 input:not([type="submit"]), textarea {
     background-color: $lightgray2;
 }
+
+form span {
+    color: $pink;
+}

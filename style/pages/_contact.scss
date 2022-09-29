@@ -54,6 +54,12 @@ section.contact {
                     outline: 1px solid #439f31;
                 }
             }
+
+            textarea {
+                resize: vertical;
+                min-height: 18.4px;
+                max-height: 512px;
+            }
         }
     }
 }
