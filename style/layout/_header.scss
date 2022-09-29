@@ -1,8 +1,5 @@
-header {
-    display: flex;
+body > header {
     flex-direction: column;
-    gap: 41px;
-    margin-bottom: 4px;
 
     a.logo {
         margin: auto;

@@ -14,20 +14,20 @@
     <main>
         <h1><?= $page ?></h1>
 
-        <section class="flex contact">
-            <div class="col-3 info">
+        <section class="contact flex">
+            <div class="info flex col-3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda dolor dolores quia mollitia maiores repellendus.</p>
 
                 <div>
-                    <p>Studio <?= $site ?></p>
+                    <h2>Studio <?= $site ?></h2>
                     <p><?= $address ?></p>
-                    <p>Tél. <?= $phone ?></p>
-                    <p>Email : <?= $email ?></p>
+                    <p><?= $phone ?></p>
+                    <p><?= $email ?></p>
                 </div>
 
                 <div>
-                    <p>Nos horaires</p>
-                    <p>Lundi à vendredi de 9h00 à 17h00</p>
+                    <h2>Nos horaires</h2>
+                    <p>Lundi à vendredi de 9 h 00 à 17 h 00</p>
                 </div>
             </div>
 

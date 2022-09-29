@@ -12,7 +12,7 @@
 
     <!-- --- MAIN --- -->
     <main>
-        <section class="flex about">
+        <section class="flex image">
             <div>
                 <h1><?= $page ?></h1>
 
@@ -28,7 +28,7 @@
                 <h2>Contactez-moi</h2>
                 <p>Vous souhaitez avoir des renseignements sur mon accompagnement individuel ?</p>
 
-                <a href="contact.php" class="button">Envoyer un message</a>
+                <a href="/contact/" class="button">Envoyer un message</a>
             </div>
 
             <img src="../images/prof-yoga-pose.png" alt="Pose d'une professeur de yoga">

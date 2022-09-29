@@ -1,4 +1,4 @@
-<header>
+<header class="flex">
     <a href="/" class="logo"><img src="../images/logo-bella-yoga.png" alt="Logo Bella Yoga"></a>
 
     <nav>

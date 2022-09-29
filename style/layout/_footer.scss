@@ -1,5 +1,4 @@
 footer {
-    display: flex;
     justify-content: space-between;
     margin-top: 48px;
 
@@ -8,21 +7,23 @@ footer {
     }
 
     div.info {
-        p.contact,
-        a {
-            font-size: 26px;
-            font-weight: bold;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 12px;
+
+        * {
+            margin: 0;
+            line-height: normal;
         }
 
-        p {
-            font-size: 12px;
-            line-height: normal;
+        p.contact, a {
+            font-size: 26px;
+            font-weight: bold;
         }
     }
 
     div.social {
         ul {
-            display: flex;
             gap: 16px;
 
             li, svg {

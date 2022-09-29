@@ -1,0 +1,41 @@
+section.blog {
+    gap: 96px;
+}
+
+section.posts {
+    margin-top: 48px;
+}
+
+aside.posts {
+    &>p {
+        line-height: 35px;
+    }
+
+    article {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.the_post {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+
+        * {
+            margin: 0;
+        }
+
+        p.meta {
+            margin-bottom: 32px;
+        }
+
+        img {
+            width: 100%;
+            height: 384px;
+            object-fit: cover;
+        }
+    }
+}

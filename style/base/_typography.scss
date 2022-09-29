@@ -1,11 +1,16 @@
 * {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
+    line-height: normal;
 }
 
 p {
     line-height: 2;
     margin-bottom: 16px;
+}
+
+p.meta {
+    line-height: 1;
 }
 
 h1,
@@ -15,7 +20,7 @@ h4,
 h5,
 h6 {
     margin-top: 32px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 h1,
@@ -24,7 +29,7 @@ h3,
 h4,
 h5,
 h6,
-section.contact div.info p {
+.posts > p {
     font-family: 'Nixie One', cursive;
 }
 
@@ -34,7 +39,7 @@ h1 {
     margin-bottom: 48px;
 }
 
-h2 {
+h2, .posts > p {
     font-size: 23px;
 }
 
