@@ -15,25 +15,40 @@ footer {
 }
 
 h1,
-a.active, form span {
+.active,
+form span,
+nav a:hover {
     color: $pink;
 }
 
+button {
+    border-color: $darkgray;
+    background-color: transparent;
+}
+
+button.active,
 a.button,
 input[type="submit"] {
-    color: inherit;
     border-color: $pink;
-    background-color: inherit;
+    background-color: transparent;
 
     &:hover {
         color: white;
     }
 }
 
+a.button,
+input[type="submit"] {
+    color: inherit;
+}
+
 hr,
+button:hover,
 a.button:hover,
 input[type="submit"]:hover {
+    color: white;
     background-color: $pink;
+    border-color: $pink;
 }
 
 input:not([type="submit"]),

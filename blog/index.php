@@ -37,6 +37,11 @@
                     </article>
                 </a>
             <? } ?>
+
+            <div class="pagination flex">
+                <button class="page active">1</button>
+                <button class="page">2</button>
+            </div>
         </section>
     </main>
 

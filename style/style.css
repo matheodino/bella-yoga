@@ -141,6 +141,7 @@ table {
 
 main,
 img,
+button,
 a.button,
 input,
 textarea {
@@ -378,6 +379,7 @@ hr {
   margin-bottom: 24px;
 }
 
+button,
 a.button,
 input[type=submit] {
   display: inline-block;
@@ -431,7 +433,7 @@ section.contact div.form form textarea {
 section.contact div.form form input:not([type=submit]):focus,
 section.contact div.form form textarea:focus {
   background-color: #ebf9ef;
-  outline: 1px solid #439f31;
+  outline: 2px solid #439f31;
 }
 section.contact div.form form textarea {
   resize: vertical;
@@ -441,6 +443,21 @@ section.contact div.form form textarea {
 
 section.posts {
   margin-top: 48px;
+}
+section.posts.flex-col {
+  gap: 96px;
+}
+section.posts div.pagination {
+  justify-content: center;
+  gap: 8px;
+}
+section.posts div.pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
 }
 
 .the_post header {
@@ -480,25 +497,41 @@ footer svg {
 }
 
 h1,
-a.active, form span {
+.active,
+form span,
+nav a:hover {
   color: #ff8086;
 }
 
+button {
+  border-color: #5e616b;
+  background-color: transparent;
+}
+
+button.active,
 a.button,
 input[type=submit] {
-  color: inherit;
   border-color: #ff8086;
-  background-color: inherit;
+  background-color: transparent;
 }
+button.active:hover,
 a.button:hover,
 input[type=submit]:hover {
   color: white;
 }
 
+a.button,
+input[type=submit] {
+  color: inherit;
+}
+
 hr,
+button:hover,
 a.button:hover,
 input[type=submit]:hover {
+  color: white;
   background-color: #ff8086;
+  border-color: #ff8086;
 }
 
 input:not([type=submit]),
