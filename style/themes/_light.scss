@@ -10,30 +10,33 @@ main {
 
 footer {
     svg {
-        fill: $darkgray;
-    }    
+        fill: $pink;
+    }
 }
 
-h1, a {
+h1,
+a.active, form span {
     color: $pink;
 }
 
-a.button, input[type="submit"] {
+a.button,
+input[type="submit"] {
     color: inherit;
     border-color: $pink;
     background-color: inherit;
 
     &:hover {
         color: white;
-        background-color: $pink;
-        cursor: pointer;
     }
 }
 
-input:not([type="submit"]), textarea {
-    background-color: $lightgray2;
+hr,
+a.button:hover,
+input[type="submit"]:hover {
+    background-color: $pink;
 }
 
-form span {
-    color: $pink;
+input:not([type="submit"]),
+textarea {
+    background-color: $lightgray2;
 }

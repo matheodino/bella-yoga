@@ -1,0 +1,18 @@
+section.sidebar {
+    gap: 96px;
+}
+
+aside.posts {
+    &.flex-col {
+        gap: 48px;
+    }
+
+    &>p {
+        line-height: 35px;
+    }
+
+    article {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

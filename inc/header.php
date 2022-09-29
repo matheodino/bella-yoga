@@ -1,5 +1,5 @@
-<header class="flex">
-    <a href="<?= $backward ?>" class="logo"><img src="<?= $backward ?>images/logo-bella-yoga.png" alt="Logo Bella Yoga"></a>
+<header class="flex flex-col">
+    <a href="<?= $backward ?>" class="logo"><img src="<?= $backward ?>images/logo-bella-yoga.png" width="330" height="57" alt="Logo Bella Yoga"></a>
 
     <nav>
         <ul>

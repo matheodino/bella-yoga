@@ -2,15 +2,15 @@
 <html lang="fr">
 
 <head>
-    <? $page = "À propos" ?>
+    <? $page = "À propos" // Document title ?>
     <? include "../inc/head.php" ?>
 </head>
 
 <body>
-    <!-- --- HEADER --- -->
+    <!-- HEADER -->
     <? include "../inc/header.php" ?>
 
-    <!-- --- MAIN --- -->
+    <!-- MAIN -->
     <main>
         <section class="flex image">
             <div>
@@ -28,14 +28,14 @@
                 <h2>Contactez-moi</h2>
                 <p>Vous souhaitez avoir des renseignements sur mon accompagnement individuel ?</p>
 
-                <a href="/contact/" class="button">Envoyer un message</a>
+                <a href="../contact/" class="button">Envoyer un message</a>
             </div>
 
-            <img src="../images/prof-yoga-pose.png" alt="Pose d'une professeur de yoga">
+            <img src="../images/prof-yoga-pose.png" width="160.75" height="384" alt="Pose d'une professeur de yoga">
         </section>
     </main>
 
-    <!-- --- FOOTER --- -->
+    <!-- FOOTER -->
     <? include "../inc/footer.php" ?>
 </body>
 

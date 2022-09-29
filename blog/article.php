@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head>
-    <? $posts = json_decode(file_get_contents("posts.json"))->posts; // List posts
+    <? $posts = json_decode(file_get_contents("posts.json"))->posts; // Convert Json to PHP array
 
-    $query = parse_url($_SERVER['REQUEST_URI'])['query']; // Get the URI query 
+    $query = parse_url($_SERVER['REQUEST_URI'])['query']; // Get the query from URI
 
     foreach ($posts as $post) { // Identify the post targetted by the query
         if ($post->slug === $query) {
@@ -13,23 +13,21 @@
         }
     }
 
-    $page = "$post->title – Blog" ?>
-    <? include "../inc/head.php" ?>
+    $page = "$post->title – Blog"; // Document title
+
+    include "../inc/head.php" ?>
 </head>
 
 <body>
-    <!-- --- HEADER --- -->
+    <!-- HEADER -->
     <? include "../inc/header.php" ?>
 
-    <!-- --- MAIN --- -->
+    <!-- MAIN -->
     <main>
-        <?
-        ?>
-
-        <section class="blog flex">
+        <section class="flex sidebar">
             <? if (isset($the_post)) { ?>
                 <article class="the_post">
-                    <header>
+                    <header class="flex flex-col">
                         <h1><?= $post->title ?></h1>
 
                         <p class="meta"><?= "Le $post->date par $post->author" ?></p>
@@ -41,11 +39,10 @@
                 </article>
             <? } else echo "Article non trouvé." ?>
 
-            <aside class="posts flex col-3">
+            <aside class="posts flex flex-col col-3">
                 <p>Articles récents</p>
 
-                <?
-                foreach ($posts as $post) {
+                <? foreach ($posts as $post) {
                     if ($post !== $the_post) { ?>
                         <a href="article.php?<?= $post->slug ?>">
                             <article>
@@ -65,7 +62,7 @@
 
     </main>
 
-    <!-- --- FOOTER --- -->
+    <!-- FOOTER -->
     <? include "../inc/footer.php" ?>
 </body>
 

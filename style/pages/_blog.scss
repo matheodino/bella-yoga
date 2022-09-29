@@ -1,34 +1,17 @@
-section.blog {
-    gap: 96px;
-}
-
 section.posts {
     margin-top: 48px;
 }
 
-aside.posts {
-    &>p {
-        line-height: 35px;
-    }
-
-    article {
-        flex-direction: column;
-        gap: 16px;
-    }
-}
-
 .the_post {
     header {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
         margin-bottom: 32px;
 
-        * {
+        h1,
+        p {
             margin: 0;
         }
 
-        p.meta {
+        p {
             margin-bottom: 16px;
 
             @include respond-to(small) {

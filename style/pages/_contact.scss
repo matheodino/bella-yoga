@@ -1,11 +1,12 @@
 section.contact {
-    div.info {
-        h2 {
-            margin-top: 0;
-        }
+    p,
+    h2 {
+        margin: 0;
+    }
 
-        a {
-            color: inherit;
+    div.info {
+        &.flex-col {
+            gap: 48px;
         }
 
         div p {
@@ -16,28 +17,14 @@ section.contact {
     div.form {
         flex: auto;
 
-        h2 {
-            margin-top: 0;
-        }
-
         form {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-
-            label {
-                display: block;
-
-                &:not(:first-child) {
-                    margin-top: 8px;
-                }
-
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
             }
 
             input[type="submit"] {
-                display: block;
-                margin-top: 24px;
-
                 @include respond-to(small) {
                     align-self: flex-start;
                 }
@@ -45,9 +32,8 @@ section.contact {
 
             input:not([type="submit"]),
             textarea {
-                border: none;
                 padding: 16px;
-                background-color: $lightgray2;
+                border: none;
 
                 &:focus {
                     background-color: #ebf9ef;
@@ -57,7 +43,7 @@ section.contact {
 
             textarea {
                 resize: vertical;
-                min-height: 18.4px;
+                min-height: 18px;
                 max-height: 512px;
             }
         }

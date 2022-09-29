@@ -1,6 +1,6 @@
 <footer class="flex">
     <div class="info flex">
-        <p class="contact"><?= $address ?><span> | </span><?= $phone ?></a></p>
+        <p class="contact"><?= $address ?><span> | </span><?= $phone ?></p>
         <p>© 2023 Bella Yoga - Tous droits réservés</p>
     </div>
 
@@ -14,8 +14,9 @@
                     </svg>
                 </a>
             </li>
+
             <li>
-                <a href="https://instagram.com/bellayoga/" target="_blank">
+                <a href="https://instagram.com/" target="_blank">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.25 448.15">
                             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -24,6 +25,7 @@
                     </div>
                 </a>
             </li>
+            
             <li>
                 <a href="https://pinterest.fr/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">

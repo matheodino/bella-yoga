@@ -8,6 +8,6 @@ $email = "<a href=\"mailto:hello@bella-yoga.com\">hello@bella-yoga.com</a>";
 $dir = dirname($_SERVER["SCRIPT_NAME"]);
 $dir_array = explode("/", $dir);
 $slug = end($dir_array);
-$root = $slug == "bella-yoga" ? true : false;
+$root = $slug == "bella-yoga" ? true : false; // Detect if the page is the root index
 $backward = $root == true ? "" : "../";
 $active = "class=\"active\"";

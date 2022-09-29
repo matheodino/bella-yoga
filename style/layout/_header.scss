@@ -1,13 +1,7 @@
-body > header {
-    &.flex {
-        flex-direction: column;
-    }
+body>header {
+    align-items: center;
 
-    a.logo {
-        margin: auto;
-
-        img {
-            max-height: 57px;
-        }
+    &.flex.flex-col {
+        gap: 48px;
     }
 }

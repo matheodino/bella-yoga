@@ -2,22 +2,23 @@
 <html lang="fr">
 
 <head>
-    <? $page = "Blog" ?>
+    <? $page = "Blog" // Document title ?>
     <? include "../inc/head.php" ?>
 </head>
 
 <body>
-    <!-- --- HEADER --- -->
+    <!-- HEADER -->
     <? include "../inc/header.php" ?>
 
-    <!-- --- MAIN --- -->
+    <!-- MAIN -->
     <main>
         <h1><?= $page ?></h1>
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa possimus, officiis nostrum quaerat soluta, aperiam modi eos velit incidunt consectetur a assumenda illo sed nam maxime deserunt ea doloremque dolor qui.</p>
 
-        <section class="flex posts">
-            <? $posts = json_decode(file_get_contents("posts.json"))->posts;
+        <section class="posts flex flex-col">
+            <? $posts = json_decode(file_get_contents("posts.json"))->posts; // Convert Json to PHP array
+            
             foreach ($posts as $post) { ?>
                 <a href="article.php?<?= $post->slug ?>">
                     <article>
@@ -29,7 +30,7 @@
                             <p class="meta"><?= "Le $post->date par $post->author" ?></p>
 
                             <p>
-                                <?= // Print an excerpt of the first 32 words 
+                                <?= // Print an excerpt of the first 32 words
                                 implode(" ", array_slice(str_word_count(strip_tags(implode(" ", $post->content)), 1), 0, 31)) . "..." ?>
                             </p>
                         </div>
@@ -39,7 +40,7 @@
         </section>
     </main>
 
-    <!-- --- FOOTER --- -->
+    <!-- FOOTER -->
     <? include "../inc/footer.php" ?>
 </body>
 
