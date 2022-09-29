@@ -5,8 +5,9 @@ $phone = "<a href=\"tel:+33987654321\">09 87 65 43 21</a>";
 $email = "<a href=\"mailto:hello@bella-yoga.com\">hello@bella-yoga.com</a>";
 
 // Utility
-$slug = stripslashes(str_replace("/", "", dirname($_SERVER["SCRIPT_NAME"]))); // Get current page slug
-$path = dirname($_SERVER["SCRIPT_NAME"]);
-$root = $path == "/bella-yoga" ? true : false;
+$dir = dirname($_SERVER["SCRIPT_NAME"]);
+$dir_array = explode("/", $dir);
+$slug = end($dir_array);
+$root = $slug == "bella-yoga" ? true : false;
 $backward = $root == true ? "" : "../";
 $active = "class=\"active\"";

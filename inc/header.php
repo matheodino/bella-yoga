@@ -3,7 +3,7 @@
 
     <nav>
         <ul>
-            <li><a href="<?= $backward ?>" <? if ($slug == "") echo $active ?>>Accueil</a></li>
+            <li><a href="<?= $backward ?>" <? if ($slug == "bella-yoga") echo $active ?>>Accueil</a></li>
             <li><a href="<?= $backward ?>a-propos/" <? if ($slug == "a-propos") echo $active ?>>À propos</a></li>
             <li>Cours</li>
             <li><a href="<?= $backward ?>contact/" <? if ($slug == "contact") echo $active ?>>Contact</a></li>
