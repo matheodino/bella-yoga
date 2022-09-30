@@ -208,7 +208,7 @@ h3 {
 
 body {
   max-width: 980px;
-  margin: 48px auto;
+  margin: 32px auto;
   padding: 8px;
 }
 
@@ -306,7 +306,7 @@ nav ul li {
 footer {
   justify-content: space-between;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 @media (min-width: 767px) {
   footer {
@@ -369,7 +369,7 @@ body > header {
   align-items: center;
 }
 body > header.flex.flex-col {
-  gap: 48px;
+  gap: 32px;
 }
 
 hr {

@@ -1,7 +1,7 @@
 footer {
     justify-content: space-between;
     text-align: center;
-    margin-top: 48px;
+    margin-top: 32px;
 
     @include respond-to(small) {
         text-align: left;
