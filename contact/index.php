@@ -36,26 +36,26 @@
     
                 <form class="flex flex-col">
                     <div>
-                        <label for="name">Votre nom <span>*</span></label>
+                        <label for="name">Votre nom<span>*</span></label>
                         <input type="text" name="name" id="name">
                     </div>
     
                     <div>
-                        <label for="email">Votre email <span>*</span></label>
+                        <label for="email">Votre email<span>*</span></label>
                         <input type="email" name="email" id="email">
                     </div>
     
                     <div>
-                        <label for="reason">Pourquoi me contactez-vous ? <span>*</span></label>
+                        <label for="reason">Pourquoi me contactez-vous ?<span>*</span></label>
                         <input type="text" name="reason" id="reason">
                     </div>
     
                     <div>
-                        <label for="message">Votre message <span>*</span></label>
+                        <label for="message">Votre message<span>*</span></label>
                         <textarea name="message" id="message" rows="12"></textarea>
                     </div>
 
-                    <p><span>*</span> Champs obligatoires</p>
+                    <p><span>*</span>Champs obligatoires</p>
     
                     <input type="submit" value="Envoyer">
                 </form>
