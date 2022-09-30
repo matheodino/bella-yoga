@@ -25,6 +25,7 @@
     <!-- MAIN -->
     <main>
         <section class="flex sidebar">
+            <!-- Targetted post -->
             <? if (isset($the_post)) { ?>
                 <article class="the_post">
                     <header class="flex flex-col">
@@ -38,7 +39,8 @@
                     <?= implode($post->content) ?>
                 </article>
             <? } else echo "Article non trouvé." ?>
-
+            
+            <!-- Sidebar -->
             <aside class="posts flex flex-col col-3">
                 <p>Articles récents</p>
 

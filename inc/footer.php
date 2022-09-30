@@ -1,9 +1,11 @@
 <footer class="flex">
+    <!-- Business information -->
     <div class="info flex">
         <p class="contact"><?= $address ?><span> | </span><?= $phone ?></p>
         <p>© 2023 Bella Yoga - Tous droits réservés</p>
     </div>
 
+    <!-- Social links -->
     <div class="social">
         <ul class="flex">
             <li>

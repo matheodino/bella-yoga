@@ -16,6 +16,7 @@
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa possimus, officiis nostrum quaerat soluta, aperiam modi eos velit incidunt consectetur a assumenda illo sed nam maxime deserunt ea doloremque dolor qui.</p>
 
+        <!-- Posts list -->
         <section class="posts flex flex-col">
             <? $posts = array_reverse(json_decode(file_get_contents("posts.json"))->posts); // Convert Json to PHP reverse array (newest articles first)
             
@@ -38,6 +39,7 @@
                 </a>
             <? } ?>
 
+            <!-- Pagination -->
             <div class="pagination flex">
                 <button class="page active">1</button>
                 <!-- <button class="page">2</button> -->

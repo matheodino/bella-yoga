@@ -12,6 +12,7 @@
 
     <!-- MAIN -->
     <main>
+        <!-- Welcome section -->
         <section class="welcome flex image">
             <div>
                 <h1>Bienvenue sur <?= $site ?></h1>
