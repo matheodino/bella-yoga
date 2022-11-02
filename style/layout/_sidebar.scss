@@ -1,8 +1,10 @@
 section.sidebar {
-    gap: 96px;
+    gap: 64px;
 }
 
 aside.posts {
+    width: 192px;
+
     &.flex-col {
         gap: 48px;
     }

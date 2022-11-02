@@ -350,9 +350,12 @@ footer div.social ul svg {
 }
 
 section.sidebar {
-  gap: 96px;
+  gap: 64px;
 }
 
+aside.posts {
+  width: 192px;
+}
 aside.posts.flex-col {
   gap: 48px;
 }
@@ -459,6 +462,9 @@ section.posts div.pagination button {
   height: 40px;
 }
 
+.the_post {
+  flex: auto;
+}
 .the_post header {
   margin-bottom: 32px;
 }
